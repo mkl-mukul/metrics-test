@@ -30,6 +30,10 @@ class SimpleMiddleware:
                 self.graph['t'].labels('200','/').observe(end-self.start) 
                 self.graph['http'].labels(status_code=200,endpoint='/').inc() 
             elif response.status_code == 404 :
+                 self.graph['t'].labels('404','/').observe(end-self.start) 
+                 self.graph['http'].labels(status_code=404,endpoint='/').inc()
+            elif response.status_code == 500 :
+                 self.graph['t'].labels('500','/').observe(end-self.start) 
                  self.graph['http'].labels(status_code=404,endpoint='/').inc()
         return response
              
