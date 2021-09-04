@@ -19,7 +19,5 @@ http://localhost:9090
 http://localhost:8000
 ```
 
-#### refresh django page and check this query in prometheus 
-``` bash
-python_http_total_response_total
-```
+#### start grafana and download django prometheus dashboard
+##### django dashboard here(https://grafana.com/grafana/dashboards/7996)
