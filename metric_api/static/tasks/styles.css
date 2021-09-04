@@ -1,0 +1,31 @@
+body{
+    font-size: 40px;
+}
+ul{
+    height:500px;
+    overflow:auto;
+    display: block;
+    width:600px;
+    scroll-behavior: smooth;
+    border:1px solid black
+}
+ul li{
+    position: relative;
+    width:500px;
+    background-color:black;
+    color: #eee;
+    box-shadow: 5px 5px 2px violet;
+    list-style: square inside;
+}
+a {
+    outline: none;
+    text-decoration: none;
+    color:turquoise;
+}
+form{
+    position: relative;
+    left:0px;
+}
+input{
+    font-size:40px;
+}

@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>task to do</title>
+    <link href="{% static 'tasks/styles.css' %}" rel="stylesheet">
+</head>
+<body>
+    <ul>
+    {% for task in tasks %}
+        <li>{{task.task}} &nbsp; &nbsp; <a href="{% url 'tasks:delete' r_id=task.id %}">❌</a> <a href="{% url 'tasks:update_t' r_id=task.id %}">🖉</a> </li><br>
+      
+        {% endfor %}
+    </ul>
+    
+    <form action="{% url 'tasks:task_index' %}" method="post">
+        {% csrf_token %}
+        <input type="text" name="task">
+        <input type="submit" value="add new task">
+    </form>
+
+
+</body>
+
+
+</html>
