@@ -4,6 +4,7 @@
 ```bash
 pip install django-prometheus
 ```
+### download prometheus (https://prometheus.io/download/)
 
 ### add this in prometheus.yml file 
 ```bash
