@@ -1,5 +1,10 @@
 # metrics-test
 ## install django 
+### install django-prometheus or [check here](https://github.com/korfuri/django-prometheus)
+```bash
+pip install django-prometheus
+```
+
 ## go to prometheus folder start  
 ```bash
 ./prometheus --config.file=prometheus.yml
